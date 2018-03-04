@@ -1,0 +1,10 @@
+{
+  "result": true,
+  "appraised_rates": {
+    "buy_rate": "6.46",
+    "sell_rate": "6.44",
+    "max_rate": "6.58",
+    "min_rate": "6.11",
+    "rate_24h_ago": "6.48"
+  }
+}
