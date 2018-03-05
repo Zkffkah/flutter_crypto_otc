@@ -31,14 +31,16 @@ class _BtcPageState extends State<BtcPage> {
   }
 
   getData() {
-    _sub = Observable.zip3(
+    _sub = Observable.zip4(
         ApiServiceFactory.getApiService()
             .getHuobiOtcBtcPrice().asStream(),
         ApiServiceFactory.getApiService()
             .getGankOtcUsdtBtcPrice().asStream(),
         ApiServiceFactory.getApiService()
             .getZbOtcQcBtcPrice().asStream(),
-            (a, b, c) => [a, b, c])
+        ApiServiceFactory.getApiService()
+            .getOtcbtcOtcBtcPrice().asStream(),
+            (a, b, c, d) => [a, b, c, d])
         .listen((prices) {
       if (mounted) {
         setState(() {

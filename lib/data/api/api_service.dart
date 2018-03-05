@@ -15,4 +15,10 @@ abstract class ApiService {
 
   Future<OtcPrice> getZbOtcQcBtcPrice();
 
+  Future<OtcPrice> getOtcbtcOtcBtcPrice();
+
+//  Future<OtcPrice> getOkexOtcBtcPrice();
+//
+//  Future<OtcPrice> getOkexOtcUsdtPrice();
+
 }

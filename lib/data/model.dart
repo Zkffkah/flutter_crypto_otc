@@ -1,6 +1,6 @@
 class OtcPrice {
   String name;
-  num price;
+  double price;
 
   OtcPrice(this.name, this.price);
 }
